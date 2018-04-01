@@ -79,7 +79,7 @@ function aktywacja_skryptu(status_aktywacji) {
         jquerry_interface_script.src = "http://code.jquery.com/ui/1.11.4/jquery-ui.js";
         document.head.appendChild(jquerry_interface_script);*/
 
-        //--#Podpięcie styli#--//        
+        //--#Podpięcie styli#--//
 
         var lista_styli = '';
 
@@ -180,7 +180,7 @@ function aktywacja_skryptu(status_aktywacji) {
         document.getElementsByTagName('BODY')[0].appendChild(style_podpinane);
 
 
-        //--#Budowa elementów składowych#--//   
+        //--#Budowa elementów składowych#--//
 
         //# Pokaż nagłówki
         var div_append_h1 = document.createElement("div");
@@ -190,7 +190,7 @@ function aktywacja_skryptu(status_aktywacji) {
         div_append_h1.className = 'button_informacyjny';
         div_append_h1.style.backgroundColor = "red";
         div_append_h1.id = 'oznaczony_element_h1';
-        
+
 
         var div_append_h2 = document.createElement("div");
         var text_node_h2 = document.createTextNode("<h2>");
@@ -214,7 +214,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
         div_append_h4.className = 'button_informacyjny';
         div_append_h4.style.backgroundColor = "goldenrod";
-        div_append_h4.id = 'oznaczony_element_h4';            
+        div_append_h4.id = 'oznaczony_element_h4';
 
         var div_append_h5 = document.createElement("div");
         var text_node_h5 = document.createTextNode("<h5>");
@@ -222,7 +222,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
         div_append_h5.className = 'button_informacyjny';
         div_append_h5.style.backgroundColor = "olive";
-        div_append_h5.id = 'oznaczony_element_h5';                  
+        div_append_h5.id = 'oznaczony_element_h5';
 
         var div_append_h6 = document.createElement("div");
         var text_node_h6 = document.createTextNode("<h6>");
@@ -230,8 +230,8 @@ function aktywacja_skryptu(status_aktywacji) {
 
         div_append_h6.className = 'button_informacyjny';
         div_append_h6.style.backgroundColor = "mediumslateblue";
-        div_append_h6.id = 'oznaczony_element_h6';              
-            
+        div_append_h6.id = 'oznaczony_element_h6';
+
         //#h1
         var h1_w_kodzie = document.getElementsByTagName("h1");
         var ile_h1_w_kodzie = h1_w_kodzie.length;
@@ -288,8 +288,8 @@ function aktywacja_skryptu(status_aktywacji) {
             h5_w_kodzie[x].setAttribute('data-vol-tool', 'true');
             h5_w_kodzie[x].appendChild(div_append_h5.cloneNode(true));
 
-        }            
-  
+        }
+
         //#h6
         var h6_w_kodzie = document.getElementsByTagName("h6");
         var ile_h6_w_kodzie = h6_w_kodzie.length;
@@ -300,8 +300,8 @@ function aktywacja_skryptu(status_aktywacji) {
             h6_w_kodzie[x].setAttribute('data-vol-tool', 'true');
             h6_w_kodzie[x].appendChild(div_append_h6.cloneNode(true));
 
-        }              
-            
+        }
+
         //alty na grafice
 
         var wszystkie_img = document.getElementsByTagName('img');
@@ -394,7 +394,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
         //Dla tagów
         var div_append_ukryte = document.createElement("div");
-        var text_node_ukryte = document.createTextNode("<Ukryte tagi>");
+        var text_node_ukryte = document.createTextNode("<Hidden Tags>");
         div_append_ukryte.appendChild(text_node_ukryte);
 
         div_append_ukryte.className = 'button_informacyjny';
@@ -403,7 +403,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
         //Dla tresci
         var div_append_ukryte_tresci = document.createElement("div");
-        var text_node_ukryte_tresci = document.createTextNode("<Ukryte tresci>");
+        var text_node_ukryte_tresci = document.createTextNode("<Hidden text>");
         div_append_ukryte_tresci.appendChild(text_node_ukryte_tresci);
 
         div_append_ukryte_tresci.className = 'button_informacyjny';
@@ -412,7 +412,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
         //Dla ukrytych <h>
         var div_append_ukryte_naglowki = document.createElement("div");
-        var text_node_ukryte_naglowki = document.createTextNode("<Ukryte H-x>");
+        var text_node_ukryte_naglowki = document.createTextNode("<Hidden H-x>");
         div_append_ukryte_naglowki.appendChild(text_node_ukryte_naglowki);
 
         div_append_ukryte_naglowki.className = 'button_informacyjny';
@@ -459,10 +459,10 @@ function aktywacja_skryptu(status_aktywacji) {
                     }
 
 
-                    //Dla ukrytych Hx  
+                    //Dla ukrytych Hx
                     var dzieci_elementu = wszystkie_elementy[z].getElementsByTagName('*');
                     var ile_dzieci = dzieci_elementu.length;
-                    
+
                     for (var q = 0; q <= ile_dzieci - 1; q++) {
                         var matched_hx = dzieci_elementu[q].tagName.match(/(H[0-6]+)/);
                         if (dzieci_elementu[q].tagName.match(/(H[0-6]+)/g)) {
@@ -585,10 +585,10 @@ function aktywacja_skryptu(status_aktywacji) {
        'TheaterGroup',
        'SportsTeam'];
 
-        // mikrodane_html_nap_ilosc=0,mikrodane_Json_nap_ilosc=0;	
+        // mikrodane_html_nap_ilosc=0,mikrodane_Json_nap_ilosc=0;
         //--#Sprawdź czy na stronie jest odwołanie do schema Org
         for (x = 0; x < wszystkie_elementy.length - 1; x++) {
-            //--#DLA wersji HTML 
+            //--#DLA wersji HTML
             itemp_type = wszystkie_elementy[x].getAttribute('itemtype');
             //--#Czy atrybut istnieje
             if (itemp_type != undefined) {   //--#Czy jest schema org i czy doyczy NAP
@@ -601,7 +601,7 @@ function aktywacja_skryptu(status_aktywacji) {
             //--#DLA wersji JSONEM
             if (wszystkie_elementy[x].tagName == "SCRIPT") {
                 var zawartosc_skryptu = wszystkie_elementy[x].innerHTML;
-                //--#Czy jest schema org i czy doyczy NAP 
+                //--#Czy jest schema org i czy doyczy NAP
                 if (zawartosc_skryptu.match(/schema\.org/i) && zawartosc_skryptu.match(/"@type": "PostalAddress"/i)) {
                     mikrodane_nap_ilosc++;
                     mikrodane_Json_nap_ilosc++;
@@ -610,7 +610,7 @@ function aktywacja_skryptu(status_aktywacji) {
             }
         }
 
-        //--#LINKI-liczenie i nofollow.txt--#\\  
+        //--#LINKI-liczenie i nofollow.txt--#\\
         //#Generowanie do panelu
         var div_append_linki_w_kodzie_wszystkie = document.createElement("div");
         var text_node_linki_w_kodzie_wszystkie = document.createTextNode("<a> w sumie");
@@ -618,8 +618,8 @@ function aktywacja_skryptu(status_aktywacji) {
 
         div_append_linki_w_kodzie_wszystkie.className = 'button_informacyjny';
         div_append_linki_w_kodzie_wszystkie.style.backgroundColor = "rgb(116,77,104)";
-        
-        
+
+
         var div_append_linki_w_kodzie_wychodzi = document.createElement("div");
         var text_node_linki_w_kodzie_wychodzi = document.createTextNode("<a> wychodzi");
         div_append_linki_w_kodzie_wychodzi.appendChild(text_node_linki_w_kodzie_wychodzi);
@@ -643,22 +643,22 @@ function aktywacja_skryptu(status_aktywacji) {
             if (!linki_w_kodzie_wszystkie[x].href.match(domena_match) && linki_w_kodzie_wszystkie[x].href!=false)
             {
               ile_linki_wychodzace++;
-               
+
               //#oznaczenie nofoolow
               linki_w_kodzie_wszystkie[x].style.backgroundColor="rgb(116,77,104)";
-              linki_w_kodzie_wszystkie[x].style.color="white"; 
+              linki_w_kodzie_wszystkie[x].style.color="white";
               linki_w_kodzie_wszystkie[x].style.border="3px yellow solid"  ;
-              linki_w_kodzie_wszystkie[x].style.boxShadow="1px 1px 1px pink"  ;                
-              linki_w_kodzie_wszystkie[x].style.borderRadius="12px"  ;               
+              linki_w_kodzie_wszystkie[x].style.boxShadow="1px 1px 1px pink"  ;
+              linki_w_kodzie_wszystkie[x].style.borderRadius="12px"  ;
               linki_w_kodzie_wszystkie[x].style.padding = "3px";
               linki_w_kodzie_wszystkie[x].setAttribute('vol-tool-external-links','true');
             }
 
         }
 
-        //--#Robots.txt--#\\   
+        //--#Robots.txt--#\\
 
-        //# Dodatkowe funkcje        
+        //# Dodatkowe funkcje
         var temp_test_var = ''
         //#funkcja sprawdzajaca czy cos jest zablokowane
         function sprawdz_zablokowane_zasoby(sciezka, typ) {
@@ -698,12 +698,12 @@ function aktywacja_skryptu(status_aktywacji) {
         var zawartosc_pliku_robots = '', tablica_disallow, tablica_disallow_rozmiar, robots_odfiltrowany;
         var zablokowane_media_ilosc = 0, zablokowane_media_css_ilosc = 0, zablokowane_media_js_ilosc = 0, zablokowane_media_img = 0, zablokowane_media_css = 0, zablokowane_media_inne = 0;
 
-        var blokowane_foldery_grafika = '', blokowane_foldery_css = '', blokowane_foldery_js = '', blokowane_foldery_inne = '', czy_robots_istnieje = 'Plik ISTNIEJE';
+        var blokowane_foldery_grafika = '', blokowane_foldery_css = '', blokowane_foldery_js = '', blokowane_foldery_inne = '', czy_robots_istnieje = 'File Exists';
 
         var plik_do_pobrania = window.location.protocol+"//" + document.domain + "/robots.txt";
         ajax_pobieranie_pliku.open("GET",plik_do_pobrania, false);
         ajax_pobieranie_pliku.send();
-           
+
         zawartosc_pliku_robots = ajax_pobieranie_pliku.responseText;
 
 
@@ -760,7 +760,7 @@ function aktywacja_skryptu(status_aktywacji) {
             var obliczone_style = window.getComputedStyle(wszystkie_elementy[m]);
             var display_style_status = obliczone_style.getPropertyValue('display');
 
-            if (wszystkie_elementy[m].innerHTML.replace(/<[^>]+>/g, '').length > 300 
+            if (wszystkie_elementy[m].innerHTML.replace(/<[^>]+>/g, '').length > 300
                 && wszystkie_elementy[m].tagName != "SCRIPT" && wszystkie_elementy[m].tagName != "STYLE"
                 && wszystkie_elementy[m].tagName != "BODY" && wszystkie_elementy[m].tagName != "HEAD"
                 && wszystkie_elementy[m].tagName != "IFRAME" && wszystkie_elementy[m].tagName =='P'
@@ -793,7 +793,7 @@ function aktywacja_skryptu(status_aktywacji) {
         div_append_robots_zasoby_zablokowane.style.backgroundColor = "midnightblue";
         div_append_robots_zasoby_zablokowane.id = 'oznaczony_element_robots_zasoby_zablokowane_ogolnie';
 
-        //#Zablokowane grafiki appendy        
+        //#Zablokowane grafiki appendy
         var div_append_robots_zasoby_zablokowane_grafiki = document.createElement("div");
         var text_node_robots_zasoby_zablokowane_grafiki = document.createTextNode("robo.txt - IMG");
         div_append_robots_zasoby_zablokowane_grafiki.appendChild(text_node_robots_zasoby_zablokowane_grafiki);
@@ -803,7 +803,7 @@ function aktywacja_skryptu(status_aktywacji) {
         div_append_robots_zasoby_zablokowane_grafiki.id = 'oznaczony_element_robots_zasoby_zablokowane_grafiki_ogolnie';
         div_append_robots_zasoby_zablokowane_grafiki.title = blokowane_foldery_grafika;
 
-        //#Zablokowane CSSy appendy    
+        //#Zablokowane CSSy appendy
         var div_append_robots_zasoby_zablokowane_css = document.createElement("div");
         var text_node_robots_zasoby_zablokowane_css = document.createTextNode("robo.txt - CSS");
         div_append_robots_zasoby_zablokowane_css.appendChild(text_node_robots_zasoby_zablokowane_css);
@@ -813,7 +813,7 @@ function aktywacja_skryptu(status_aktywacji) {
         div_append_robots_zasoby_zablokowane_css.id = 'oznaczony_element_robots_zasoby_zablokowane_css';
         div_append_robots_zasoby_zablokowane_css.title = blokowane_foldery_css;
 
-        //#Zablokowane JSy appendy        
+        //#Zablokowane JSy appendy
         var div_append_robots_zasoby_zablokowane_js = document.createElement("div");
         var text_node_robots_zasoby_zablokowane_js = document.createTextNode("robo.txt - JS");
         div_append_robots_zasoby_zablokowane_js.appendChild(text_node_robots_zasoby_zablokowane_js);
@@ -824,9 +824,9 @@ function aktywacja_skryptu(status_aktywacji) {
         div_append_robots_zasoby_zablokowane_js.title = blokowane_foldery_js;
 
 
-        //#Zablokowane INNE appendy        
+        //#Zablokowane INNE appendy
         var div_append_robots_zasoby_zablokowane_inne = document.createElement("div");
-        var text_node_robots_zasoby_zablokowane_inne = document.createTextNode("robo.txt - INNE");
+        var text_node_robots_zasoby_zablokowane_inne = document.createTextNode("robo.txt - Others");
         div_append_robots_zasoby_zablokowane_inne.appendChild(text_node_robots_zasoby_zablokowane_inne);
 
         div_append_robots_zasoby_zablokowane_inne.className = 'button_informacyjny';
@@ -834,7 +834,7 @@ function aktywacja_skryptu(status_aktywacji) {
         div_append_robots_zasoby_zablokowane_inne.id = 'oznaczony_element_robots_zasoby_zablokowane_inne';
         div_append_robots_zasoby_zablokowane_inne.title = blokowane_foldery_inne;
 
-        //#Czy robots.txt istnieje        
+        //#Czy robots.txt istnieje
         var div_append_robots_istnienie_pliku = document.createElement("div");
         var text_node_robots_istnienie_pliku = document.createTextNode("robo.txt - STATUS");
         div_append_robots_istnienie_pliku.appendChild(text_node_robots_istnienie_pliku);
@@ -845,25 +845,25 @@ function aktywacja_skryptu(status_aktywacji) {
         div_append_robots_istnienie_pliku.title = blokowane_foldery_inne;
 
 
-        //#Nofollow i liczenie linków#//      
+        //#Nofollow i liczenie linków#//
 
-        //#W sumie linków      
+        //#W sumie linków
         var div_append_linki_w_kodzie_wszystkie_panel = document.createElement("div");
-        var text_node_linki_w_kodzie_wszystkie_panel = document.createTextNode("<a> ILE");
+        var text_node_linki_w_kodzie_wszystkie_panel = document.createTextNode("<a> on page");
         div_append_linki_w_kodzie_wszystkie_panel.appendChild(text_node_linki_w_kodzie_wszystkie_panel);
 
         div_append_linki_w_kodzie_wszystkie_panel.className = 'button_informacyjny';
         div_append_linki_w_kodzie_wszystkie_panel.style.backgroundColor = "midnightblue";
-        
+
         //#W sumie wychodzi
         var div_append_linki_w_kodzie_wychodzi_panel = document.createElement("div");
-        var text_node_linki_w_kodzie_wychodzi_panel = document.createTextNode("<a> Wychodzi");
+        var text_node_linki_w_kodzie_wychodzi_panel = document.createTextNode("<a> External");
         div_append_linki_w_kodzie_wychodzi_panel.appendChild(text_node_linki_w_kodzie_wychodzi_panel);
 
         div_append_linki_w_kodzie_wychodzi_panel.className = 'button_informacyjny';
         div_append_linki_w_kodzie_wychodzi_panel.style.backgroundColor = "midnightblue";
-        
-        // document.getElementsByTagName('container').innerHTML=zablokowane_media_ilosc+'<br\><br\><br\>'+temp_test_var;        
+
+        // document.getElementsByTagName('container').innerHTML=zablokowane_media_ilosc+'<br\><br\><br\>'+temp_test_var;
 
         //-----------------------Statystyki-----------------------------------------\\
 
@@ -898,18 +898,18 @@ function aktywacja_skryptu(status_aktywacji) {
         var stats_panel_h4 = document.createElement('div');
         var stats_panel_h4_text = document.createTextNode(' { ' + ile_h4_w_kodzie + ' }');
         stats_panel_h4.appendChild(div_append_h4);
-        stats_panel_h4.appendChild(stats_panel_h4_text);            
-  
+        stats_panel_h4.appendChild(stats_panel_h4_text);
+
         var stats_panel_h5 = document.createElement('div');
         var stats_panel_h5_text = document.createTextNode(' { ' + ile_h5_w_kodzie + ' }');
         stats_panel_h5.appendChild(div_append_h5);
-        stats_panel_h5.appendChild(stats_panel_h5_text);               
- 
+        stats_panel_h5.appendChild(stats_panel_h5_text);
+
         var stats_panel_h6 = document.createElement('div');
         var stats_panel_h6_text = document.createTextNode(' { ' + ile_h6_w_kodzie + ' }');
         stats_panel_h6.appendChild(div_append_h6);
-        stats_panel_h6.appendChild(stats_panel_h6_text);              
-            
+        stats_panel_h6.appendChild(stats_panel_h6_text);
+
         var stats_panel_ukryte = document.createElement('div');
         var stats_panel_ukryte_text = document.createTextNode('{ ' + _ile_ukrytych_elementow + ' }');
         stats_panel_ukryte.appendChild(div_append_ukryte);
@@ -979,21 +979,21 @@ function aktywacja_skryptu(status_aktywacji) {
         var stats_panel_ile_linkow_wychodzi_text = document.createTextNode('{ ' + ile_linki_wychodzace + ' }');
         stats_panel_ile_linkow_wychodzi.appendChild(div_append_linki_w_kodzie_wychodzi);
         stats_panel_ile_linkow_wychodzi.appendChild(stats_panel_ile_linkow_wychodzi_text);
-        
+
         //# Style tworzonych elementów do statystyk
         div_append_h1.setAttribute('style', div_append_h1.getAttribute('style') + 'float:left !important;');
         div_append_h2.setAttribute('style', div_append_h2.getAttribute('style') + 'float:left !important;');
         div_append_h3.setAttribute('style', div_append_h3.getAttribute('style') + 'float:left !important;');
         div_append_h4.setAttribute('style', div_append_h4.getAttribute('style') + 'float:left !important;');
         div_append_h5.setAttribute('style', div_append_h5.getAttribute('style') + 'float:left !important;');
-        div_append_h6.setAttribute('style', div_append_h6.getAttribute('style') + 'float:left !important;');            
+        div_append_h6.setAttribute('style', div_append_h6.getAttribute('style') + 'float:left !important;');
         div_append_ukryte.setAttribute('style', div_append_ukryte.getAttribute('style') + 'float:left !important;');
         div_append_ukryte_tresci.setAttribute('style', div_append_ukryte_tresci.getAttribute('style') + 'float:left !important;');
         div_append_ukryte_naglowki.setAttribute('style', div_append_ukryte_naglowki.getAttribute('style') + 'float:left !important;');
         div_append_iframe.setAttribute('style', div_append_iframe.getAttribute('style') + 'float:left !important;');
         div_append_linki_w_kodzie_wszystkie.setAttribute('style', div_append_linki_w_kodzie_wszystkie.getAttribute('style') + 'float:left !important;');
         div_append_linki_w_kodzie_wychodzi.setAttribute('style', div_append_linki_w_kodzie_wychodzi.getAttribute('style') + 'float:left !important;');
-        
+
         div_append_mikrodane_NAP_HTML.style.float = 'left';
         div_append_mikrodane_NAP_JSON.style.float = 'left';
 
@@ -1016,7 +1016,7 @@ function aktywacja_skryptu(status_aktywacji) {
         stats_panel.appendChild(stats_panel_h3);
         stats_panel.appendChild(stats_panel_h4);
         stats_panel.appendChild(stats_panel_h5);
-        stats_panel.appendChild(stats_panel_h6);            
+        stats_panel.appendChild(stats_panel_h6);
         stats_panel.appendChild(stats_panel_ukryte_naglowki);
         stats_panel.appendChild(stats_panel_ukryte);
         stats_panel.appendChild(stats_panel_ukryte_tresci);
@@ -1060,7 +1060,7 @@ function aktywacja_skryptu(status_aktywacji) {
         panel_do_usuniecia.parentNode.removeChild(panel_do_usuniecia);
 
         //--------# ZNISZCZ WSZYSTKIE ELEMENTY DODATKOWE #--------//
-        
+
         var wszystkie_elementy = document.getElementsByTagName('*');
         var ile_jest_elementow = wszystkie_elementy.length;
 
@@ -1078,7 +1078,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
             rodzic.removeChild(do_ubicia);
         }
-        
+
         */
 
         // Pobieranie divow zawierających ID
@@ -1108,7 +1108,7 @@ function aktywacja_skryptu(status_aktywacji) {
             }
 
         }
-        
+
 
 
        /* for (c = 0; c <= ilosc_divow - 1; c++)
@@ -1118,13 +1118,13 @@ function aktywacja_skryptu(status_aktywacji) {
 
                 var do_ubicia = wszystkie_divy[c];
                 var rodzic = do_ubicia.parentNode;
-       
+
                 rodzic.removeChild(do_ubicia);
 
                 wszystkie_divy = document.getElementsByTagName('DIV');;
                 ilosc_divow = wszystkie_divy.length;
             }
-           
+
         }*/
 
          //-- generalne ubijanie elementów z outlinem --//
@@ -1148,7 +1148,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
 
         //-- generalne ubijanie wychodzących linków --//
- 
+
         for (c = 0; c <= ile_jest_elementow - 1; c++) {
 
             var atrybut = wszystkie_elementy[c].getAttribute('vol-tool-external-links');
@@ -1159,7 +1159,7 @@ function aktywacja_skryptu(status_aktywacji) {
             }
         }
 
-        
+
         //-- generalne ubijanie ilości znaków --//
         for (c = 0; c <= ile_jest_elementow - 1; c++) {
 
