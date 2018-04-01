@@ -4,7 +4,7 @@ This tool works with plugins for JS scripts for Firefox and Chrome.
 For Firefox - GreaseMonkey
 For Chrome – Tampermonkey
 
-![alt text](https://github.com/Volmarg/Seo-tool-Grease-Monkey-Tampermonkey/blob/master/screen.jpg)
+![alt text](https://raw.githubusercontent.com/Volmarg/Seo-tool-Grease-Monkey-Tampermonkey/master/screen.jpg)
 
 
 Once installed, You can run/close script on web pages with combination of keys „SHIFT+X”.
