@@ -613,7 +613,7 @@ function aktywacja_skryptu(status_aktywacji) {
         //--#LINKI-liczenie i nofollow.txt--#\\
         //#Generowanie do panelu
         var div_append_linki_w_kodzie_wszystkie = document.createElement("div");
-        var text_node_linki_w_kodzie_wszystkie = document.createTextNode("<a> w sumie");
+        var text_node_linki_w_kodzie_wszystkie = document.createTextNode("<a> Totally");
         div_append_linki_w_kodzie_wszystkie.appendChild(text_node_linki_w_kodzie_wszystkie);
 
         div_append_linki_w_kodzie_wszystkie.className = 'button_informacyjny';
@@ -621,7 +621,7 @@ function aktywacja_skryptu(status_aktywacji) {
 
 
         var div_append_linki_w_kodzie_wychodzi = document.createElement("div");
-        var text_node_linki_w_kodzie_wychodzi = document.createTextNode("<a> wychodzi");
+        var text_node_linki_w_kodzie_wychodzi = document.createTextNode("<a> External");
         div_append_linki_w_kodzie_wychodzi.appendChild(text_node_linki_w_kodzie_wychodzi);
 
         div_append_linki_w_kodzie_wychodzi.className = 'button_informacyjny';
