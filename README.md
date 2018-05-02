@@ -7,7 +7,7 @@ For Firefox - GreaseMonkey
 For Chrome – Tampermonkey
 
 ![alt text](https://raw.githubusercontent.com/Volmarg/Seo-tool-Grease-Monkey-Tampermonkey/master/screenshot.jpg)
-
+Script can be tested at <a href="http://projekt-seo-tool.volmarg.hekko24.pl/" this website </a>.
 
 Once installed, You can run/close script on web pages with combination of keys „SHIFT+X”.
 
