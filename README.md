@@ -1,6 +1,7 @@
 # Seo tool - Grease Monkey/Tampermonkey
 
 #Old scripts - one of first in JS#
+
 Script can be tested at http://projekt-seo-tool.volmarg.hekko24.pl/ .
 
 This tool works with plugins for JS scripts for Firefox and Chrome.
